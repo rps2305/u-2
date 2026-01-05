@@ -1,0 +1,31 @@
+{
+  "name": "u-2-spyplane-website",
+  "version": "1.0.0",
+  "description": "Informational website about the U-2 spyplane with responsive design and image gallery",
+  "main": "src/index.html",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:lint": "htmlhint src/**/*.html && prettier --check src/",
+    "build": "npx tailwindcss -i ./src/css/styles.css -o ./public/styles.css",
+    "build:watch": "npx tailwindcss -i ./src/css/styles.css -o ./public/styles.css --watch"
+  },
+  "keywords": [
+    "u-2",
+    "spyplane",
+    "aviation",
+    "history"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "autoprefixer": "^10.4.23",
+    "htmlhint": "^1.8.0",
+    "postcss": "^8.5.6",
+    "prettier": "^3.7.4",
+    "tailwindcss": "^3.4.19"
+  }
+}
