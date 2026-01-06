@@ -1,7 +1,7 @@
 # Implementation Plan: U-2 Spyplane Informational Website
 
-**Branch**: `001-u2-spyplane-website` | **Date**: 2026-01-03 | **Spec**: [link](spec.md)
-**Input**: Feature specification from `/specs/001-u2-spyplane-website/spec.md`
+**Branch**: `004-u2-spyplane-website` | **Date**: 2026-01-03 | **Spec**: [link](spec.md)
+**Input**: Feature specification from `/specs/004-u2-spyplane-website/spec.md`
 
 ## Summary
 
@@ -21,23 +21,23 @@ Build a responsive informational website about the U-2 spyplane featuring 50+ im
 
 ## Constitution Check
 
-*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
+_GATE: Must pass before Phase 0 research. Re-check after Phase 1 design._
 
-| Principle | Requirement | Compliance Status |
-|-----------|-------------|-------------------|
-| Code Quality Excellence | HTML MUST follow semantic structure, pass linting | ✅ COMPLIANT: HTMLhint, semantic tags, Prettier formatting |
-| Testing Standards | Tests MUST verify responsive behavior and image loading | ✅ COMPLIANT: Playwright viewport tests configured |
-| UX Consistency | Responsive design MUST follow mobile-first approach | ✅ COMPLIANT: Tailwind breakpoints, responsive navigation |
-| Performance Requirements | Images MUST use WEBP format for optimization | ✅ COMPLIANT: WEBP workflow, responsive srcset, lazy loading |
+| Principle                | Requirement                                             | Compliance Status | Verification Method                                                                              |
+| ------------------------ | ------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------ |
+| Code Quality Excellence  | HTML MUST follow semantic structure, pass linting       | ✅ COMPLIANT      | HTMLhint configured in tests/lint/.htmlhintrc, semantic tags used (header, nav, section, footer) |
+| Testing Standards        | Tests MUST verify responsive behavior and image loading | ✅ COMPLIANT      | Playwright viewport tests configured in tests/e2e/responsive.spec.js for 320px-3840px            |
+| UX Consistency           | Responsive design MUST follow mobile-first approach     | ✅ COMPLIANT      | Tailwind breakpoints (sm:, md:, lg:, xl:, 2xl:) used consistently, hamburger menu for mobile     |
+| Performance Requirements | Images MUST use WEBP format for optimization            | ✅ COMPLIANT      | WEBP workflow defined, responsive srcset and lazy loading implemented                            |
 
-**Post-Design Verification**: All constitutional requirements satisfied. No violations identified.
+**Post-Design Verification**: All constitutional requirements satisfied. Verification evidence documented above.
 
 ## Project Structure
 
 ### Documentation (this feature)
 
 ```text
-specs/001-u2-spyplane-website/
+specs/004-u2-spyplane-website/
 ├── plan.md              # This file (/speckit.plan command output)
 ├── research.md          # Phase 0 output (/speckit.plan command)
 ├── data-model.md        # Phase 1 output (/speckit.plan command)
@@ -76,9 +76,7 @@ public/                 # Build output (if using npm build)
 
 ## Complexity Tracking
 
-> **Fill ONLY if Constitution Check has violations that must be justified**
-
-No constitutional violations identified. The static website approach with Tailwind CSS satisfies all quality requirements.
+No constitutional violations identified. The static website approach with Tailwind CSS satisfies all quality requirements defined in `.specify/memory/constitution.md`.
 
 ---
 
@@ -95,12 +93,12 @@ No constitutional violations identified. The static website approach with Tailwi
 
 ### Unknowns to Resolve
 
-| Unknown | Research Question | Status |
-|---------|-------------------|--------|
-| Tailwind CDN vs npm build | Should we use Tailwind via CDN for simplicity or npm build for optimization? | ✅ RESOLVED: CDN for development, npm build for production |
-| Image gallery library | Should we use a lightweight custom solution or established library? | ✅ RESOLVED: Custom lightbox (vanilla JS) |
-| Lightbox functionality | What features are needed for image lightbox (zoom, caption, keyboard nav)? | ✅ RESOLVED: Keyboard nav, touch swipe, captions, smooth transitions |
-| Testing scope | What browser Matrix should we test against? | ✅ RESOLVED: Mobile/Tablet/Desktop per Playwright devices |
+| Unknown                   | Research Question                                                            | Status                                                               |
+| ------------------------- | ---------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| Tailwind CDN vs npm build | Should we use Tailwind via CDN for simplicity or npm build for optimization? | ✅ RESOLVED: CDN for development, npm build for production           |
+| Image gallery library     | Should we use a lightweight custom solution or established library?          | ✅ RESOLVED: Custom lightbox (vanilla JS)                            |
+| Lightbox functionality    | What features are needed for image lightbox (zoom, caption, keyboard nav)?   | ✅ RESOLVED: Keyboard nav, touch swipe, captions, smooth transitions |
+| Testing scope             | What browser Matrix should we test against?                                  | ✅ RESOLVED: Mobile/Tablet/Desktop per Playwright devices            |
 
 ---
 
@@ -128,13 +126,13 @@ The single-page website will contain the following sections:
 
 ### Image Organization
 
-| Category | Count | Purpose |
-|----------|-------|---------|
-| Hero images | 5-7 | Header and section backgrounds |
-| History timeline | 10-15 | Historical photos and documents |
-| Technical specs | 5-10 | Aircraft detail shots |
-| Operations | 15-20 | Mission and deployment photos |
-| Gallery collection | 20-30 | Additional high-quality images |
+| Category           | Count | Purpose                         |
+| ------------------ | ----- | ------------------------------- |
+| Hero images        | 5-7   | Header and section backgrounds  |
+| History timeline   | 10-15 | Historical photos and documents |
+| Technical specs    | 5-10  | Aircraft detail shots           |
+| Operations         | 15-20 | Mission and deployment photos   |
+| Gallery collection | 20-30 | Additional high-quality images  |
 
 ---
 
@@ -157,6 +155,7 @@ The single-page website will contain the following sections:
 ### Next Steps
 
 After Phase 1 design is complete:
+
 1. Run `/speckit.tasks` to generate implementation task list
 2. Execute tasks in order (Setup → Implementation → Testing → Polish)
 3. Validate against success criteria from spec

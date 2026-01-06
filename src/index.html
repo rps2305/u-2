@@ -80,7 +80,7 @@
     />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/typography.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <!-- Structured Data - Organization -->
     <script type="application/ld+json">
@@ -247,6 +247,8 @@
                   src="assets/images/logo/u2-logo-transparent.png"
                   alt="U-2 Spyplane Logo"
                   class="h-14 w-auto transition-transform duration-300 group-hover:scale-105"
+                  width="200"
+                  height="94"
                 />
               </div>
               <div class="hidden lg:block">
@@ -377,14 +379,18 @@
       class="relative min-h-screen flex items-center justify-center overflow-hidden bg-u2-dark"
     >
       <!-- Hero Background Image -->
-      <div class="absolute inset-0 z-0">
+      <div
+        class="absolute inset-0 z-0 overflow-hidden flex items-center justify-center bg-u2-dark"
+      >
         <img
           src="assets/images/hero/u2-hero-01.jpg"
           alt="Lockheed U-2 Spyplane in flight"
-          class="w-full h-full object-cover opacity-40"
+          class="w-full h-auto object-contain"
+          width="2048"
+          height="1500"
         />
         <div
-          class="absolute inset-0 bg-gradient-to-t from-u2-dark via-u2-dark/70 to-transparent"
+          class="absolute inset-0 bg-gradient-to-t from-u2-dark/30 via-u2-dark/20 to-transparent"
         ></div>
       </div>
 
@@ -564,7 +570,7 @@
               </tr>
               <tr>
                 <td class="font-medium text-gray-500">Empty Weight</td>
-                <td class="text-right font-mono">12,800 lb (5,800 kg)</td>
+                <td class="text-right font-mono">14,300 lb (6,500 kg)</td>
               </tr>
               <tr>
                 <td class="font-medium text-gray-500">Max Takeoff Weight</td>
@@ -580,7 +586,9 @@
             <table class="w-full spec-table text-left">
               <tr>
                 <td class="font-medium text-gray-500">Engine</td>
-                <td class="text-right font-mono">1× Pratt & Whitney J57</td>
+                <td class="text-right font-mono">
+                  1× General Electric F118-101
+                </td>
               </tr>
               <tr>
                 <td class="font-medium text-gray-500">Thrust</td>
@@ -709,9 +717,10 @@
           <div class="bg-gray-50 rounded-lg p-6">
             <h3 class="text-lg font-semibold text-u2-blue mb-2">Dragon Lady</h3>
             <p class="text-gray-700">
-              The unofficial nickname for the U-2, reflecting its elegant
-              beauty, challenging handling characteristics, and mysterious
-              nature.
+              The famous nickname for the U-2, derived from the USAF's internal
+              project designation "DRAGON LADY." The name reflects the
+              aircraft's elegant appearance, demanding flying characteristics,
+              and secretive operational history.
             </p>
           </div>
 
@@ -945,7 +954,7 @@
           <div class="bg-white rounded-lg shadow-md overflow-hidden">
             <div class="bg-u2-blue text-white p-4">
               <h3 class="text-xl font-bold">Tony LeVier</h3>
-              <p class="text-gray-200">1923-1998</p>
+              <p class="text-gray-200">1913-1998</p>
             </div>
             <div class="p-6">
               <p class="text-gray-700 mb-4">
@@ -1034,22 +1043,21 @@
               <div
                 class="bg-gradient-to-br from-u2-dark to-black rounded-lg p-6 text-white"
               >
-                <h3 class="text-xl font-bold mb-2">Piston Engine</h3>
-                <p class="text-gray-200 text-sm">Pratt & Whitney J57</p>
+                <h3 class="text-xl font-bold mb-2">Turbofan Engine</h3>
+                <p class="text-gray-200 text-sm">General Electric F118-101</p>
               </div>
             </div>
             <div class="md:w-2/3">
               <h3 class="text-xl font-bold text-u2-blue mb-2">
-                Turbojet Power at Extreme Altitudes
+                Modern High-Bypass Turbofan Power
               </h3>
               <p class="text-gray-700">
-                The U-2 was powered by a Pratt & Whitney J57 turbojet engine,
-                originally designed for strategic bombers. At 70,000 feet, the
-                air is so thin that jet engines struggle to function. The J57's
-                afterburner system and careful engine tuning allowed the U-2 to
-                operate where other aircraft could not. Modern U-2s use more
-                efficient turbofan engines with significantly improved
-                performance.
+                The current U-2S is powered by a General Electric F118-101
+                turbofan engine, delivering 17,000 lbf of thrust. This
+                represents a significant upgrade from the original Pratt &
+                Whitney J57 turbojet used in early models. The F118 provides
+                improved fuel efficiency, better high-altitude performance, and
+                reduced operating costs compared to its predecessor.
               </p>
             </div>
           </div>
@@ -1389,18 +1397,6 @@
           </div>
           <div
             class="gallery-item bg-white rounded-lg overflow-hidden shadow-md cursor-pointer"
-            data-category="hero"
-          >
-            <img
-              src="assets/images/hero/webp/u2-hero-02.webp"
-              alt="U-2 aircraft on ground"
-              data-caption="U-2 aircraft - U.S. Air Force"
-              class="w-full h-48 object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="gallery-item bg-white rounded-lg overflow-hidden shadow-md cursor-pointer"
             data-category="specs"
           >
             <img
@@ -1425,36 +1421,12 @@
           </div>
           <div
             class="gallery-item bg-white rounded-lg overflow-hidden shadow-md cursor-pointer"
-            data-category="specs"
-          >
-            <img
-              src="assets/images/gallery/webp/u2-specs-02.webp"
-              alt="U-2 aircraft details"
-              data-caption="U-2 aircraft details"
-              class="w-full h-48 object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="gallery-item bg-white rounded-lg overflow-hidden shadow-md cursor-pointer"
             data-category="history"
           >
             <img
               src="assets/images/gallery/webp/u2-history-01.webp"
               alt="U-2 historical aircraft"
               data-caption="U-2 historical aircraft"
-              class="w-full h-48 object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="gallery-item bg-white rounded-lg overflow-hidden shadow-md cursor-pointer"
-            data-category="history"
-          >
-            <img
-              src="assets/images/gallery/webp/u2-history-02.webp"
-              alt="U-2 in historical formation"
-              data-caption="U-2 in historical formation"
               class="w-full h-48 object-cover"
               loading="lazy"
             />
@@ -1471,18 +1443,6 @@
               loading="lazy"
             />
           </div>
-          <div
-            class="gallery-item bg-white rounded-lg overflow-hidden shadow-md cursor-pointer"
-            data-category="architecture"
-          >
-            <img
-              src="assets/images/gallery/webp/u2-arch-02.webp"
-              alt="U-2 wing design"
-              data-caption="U-2 wing design"
-              class="w-full h-48 object-cover"
-              loading="lazy"
-            />
-          </div>
 
           <div
             class="gallery-item bg-white rounded-lg overflow-hidden shadow-md cursor-pointer"
@@ -1492,18 +1452,6 @@
               src="assets/images/gallery/webp/u2-museum-01.webp"
               alt="U-2 on display - Smithsonian collection"
               data-caption="U-2 on display - Smithsonian National Air and Space Museum"
-              class="w-full h-48 object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="gallery-item bg-white rounded-lg overflow-hidden shadow-md cursor-pointer"
-            data-category="museum"
-          >
-            <img
-              src="assets/images/gallery/webp/u2-museum-02.webp"
-              alt="U-2 museum exhibit"
-              data-caption="U-2 museum exhibit - National Air and Space Museum"
               class="w-full h-48 object-cover"
               loading="lazy"
             />
@@ -1528,18 +1476,6 @@
               src="assets/images/gallery/webp/u2-flight-01.webp"
               alt="U-2 in flight"
               data-caption="U-2 Dragon Lady in flight"
-              class="w-full h-48 object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="gallery-item bg-white rounded-lg overflow-hidden shadow-md cursor-pointer"
-            data-category="flight"
-          >
-            <img
-              src="assets/images/gallery/webp/u2-flight-02.webp"
-              alt="U-2 high altitude flight"
-              data-caption="U-2 at high altitude - Smithsonian collection"
               class="w-full h-48 object-cover"
               loading="lazy"
             />
@@ -1599,6 +1535,8 @@
         src=""
         alt=""
         class="max-w-[90vw] max-h-[80vh] object-contain"
+        width="1200"
+        height="800"
       />
       <button
         id="lightbox-next"

@@ -3,9 +3,9 @@
 **Feature Branch**: `002-logo-gallery-lightbox`
 **Created**: 2026-01-03
 **Status**: Draft
-**Input**: User description: "use this image as a logo for the website https://www.vhv.rs/dpng/d/470-4701987_u-2-spy-plane-clipart-black-and-white.png   Also when a user clicks on a thumbnail, show to original in a responsive window. You may use a javascript library like colorbox or better to show it in gallery (prev/next)"
+**Input**: User description: "use this image as a logo for the website https://www.vhv.rs/dpng/d/470-4701987_u-2-spy-plane-clipart-black-and-white.png Also when a user clicks on a thumbnail, show to original in a responsive window. You may use a javascript library like colorbox or better to show it in gallery (prev/next)"
 
-## User Scenarios & Testing *(mandatory)*
+## User Scenarios & Testing _(mandatory)_
 
 ### User Story 1 - Display U-2 Logo in Website Header (Priority: P1)
 
@@ -84,7 +84,7 @@ As a user who prefers keyboard navigation or uses touch devices, I want to contr
 - How does the system handle very large images (over 4K resolution)? Lightbox scales large images to fit viewport using responsive CSS.
 - What happens when users navigate while image is still loading? Previous/next navigation still works; new image begins loading.
 
-## Requirements *(mandatory)*
+## Requirements _(mandatory)_
 
 ### Functional Requirements
 
@@ -108,7 +108,7 @@ As a user who prefers keyboard navigation or uses touch devices, I want to contr
 - **Gallery Image**: Thumbnail and full-size pairs from existing gallery content.
 - **Image Metadata**: Caption and alt text associated with each gallery image.
 
-## Success Criteria *(mandatory)*
+## Success Criteria _(mandatory)_
 
 ### Measurable Outcomes
 
@@ -125,7 +125,7 @@ As a user who prefers keyboard navigation or uses touch devices, I want to contr
 
 - Logo image will be downloaded locally from provided URL for reliability and performance.
 - Existing gallery structure and 9 images remain unchanged; lightbox enhances existing functionality.
-- Lightbox library or custom implementation will handle cross-browser compatibility.
+- Custom vanilla JavaScript lightbox implementation (no external library) will handle cross-browser compatibility.
 - Full-size images already exist in the gallery WEBP files.
 - Image captions will be sourced from existing alt text and metadata in gallery items.
 - Lightbox will inherit website color scheme and styling conventions.

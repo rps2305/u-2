@@ -27,9 +27,9 @@ description: "Task list for Logo and Gallery Lightbox feature implementation"
 
 **Purpose**: Project initialization and basic structure
 
-- [X] T001 Download U-2 logo image from https://www.vhv.rs/dpng/d/470-4701987_u-2-spy-plane-clipart-black-and-white.png to src/assets/images/logo/
-- [X] T002 [P] Convert logo PNG to WEBP format using cwebp at 85% quality in src/assets/images/logo/u2-logo.webp
-- [X] T003 [P] Generate favicon-size logo version at 100px width in src/assets/images/logo/u2-logo-favicon.webp
+- [x] T001 Download U-2 logo image from https://www.vhv.rs/dpng/d/470-4701987_u-2-spy-plane-clipart-black-and-white.png to src/assets/images/logo/
+- [x] T002 [P] Convert logo PNG to WEBP format using cwebp at 85% quality in src/assets/images/logo/u2-logo.webp
+- [x] T003 [P] Generate favicon-size logo version at 100px width in src/assets/images/logo/u2-logo-favicon.webp
 
 **Checkpoint**: Logo assets ready for implementation
 
@@ -41,9 +41,9 @@ description: "Task list for Logo and Gallery Lightbox feature implementation"
 
 **CRITICAL**: No user story work can begin until this phase is complete
 
-- [X] T004 Add lightbox HTML structure to src/index.html following contracts/html.md specification
-- [X] T005 [P] Create Lightbox class in src/js/main.js with open(), close(), prev(), next() methods
-- [X] T006 [P] Implement lightbox state management (isOpen, currentIndex, isLoading) in src/js/main.js
+- [x] T004 Add lightbox HTML structure to src/index.html following contracts/html.md specification
+- [x] T005 [P] Create Lightbox class in src/js/main.js with open(), close(), prev(), next() methods
+- [x] T006 [P] Implement lightbox state management (isOpen, currentIndex, isLoading) in src/js/main.js
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -57,10 +57,10 @@ description: "Task list for Logo and Gallery Lightbox feature implementation"
 
 ### Implementation for User Story 1
 
-- [X] T007 [US1] Add logo to header section in src/index.html with anchor link to #hero
-- [X] T008 [US1] Style logo in src/index.html to maintain visibility on mobile without overlapping header elements
-- [X] T009 [US1] Add logo SVG icon to header navigation for consistent display across viewports
-- [X] T009b [US1] Verify logo link navigates to #hero section and handles hash routing correctly
+- [x] T007 [US1] Add logo to header section in src/index.html with anchor link to #hero
+- [x] T008 [US1] Style logo in src/index.html to maintain visibility on mobile without overlapping header elements
+- [x] T009 [US1] Add logo SVG icon to header navigation for consistent display across viewports
+- [x] T009b [US1] Verify logo link navigates to #hero section and handles hash routing correctly
 
 **Checkpoint**: User Story 1 should be fully functional and testable independently with logo displaying correctly
 
@@ -74,14 +74,14 @@ description: "Task list for Logo and Gallery Lightbox feature implementation"
 
 ### Implementation for User Story 2
 
-- [X] T010 [US2] Update gallery items in src/index.html to include data-full attribute pointing to full-size images
-- [X] T011 [US2] Implement click handler in src/js/main.js to open lightbox on thumbnail click
-- [X] T012 [US2] Implement lightbox image loading with loading indicator in src/js/main.js
-- [X] T012b [US2] Design and implement loading indicator UI component (spinner or skeleton loader) in src/index.html for lightbox loading state
-- [X] T012c [US2] Add loading state timeout handler in src/js/main.js to show error if image fails to load within 10 seconds
-- [X] T013 [US2] Add close button functionality in src/js/main.js to close lightbox on click
-- [X] T014 [US2] Add overlay click handler in src/js/main.js to close lightbox when clicking outside image
-- [X] T015 [US2] Ensure lightbox displays images responsively within viewport per contracts/html.md
+- [x] T010 [US2] Update gallery items in src/index.html to include data-full attribute pointing to full-size images
+- [x] T011 [US2] Implement click handler in src/js/main.js to open lightbox on thumbnail click
+- [x] T012 [US2] Implement lightbox image loading with loading indicator in src/js/main.js
+- [x] T012b [US2] Design and implement loading indicator UI component (spinner or skeleton loader) in src/index.html for lightbox loading state
+- [x] T012c [US2] Add loading state timeout handler in src/js/main.js to show error if image fails to load within 10 seconds
+- [x] T013 [US2] Add close button functionality in src/js/main.js to close lightbox on click
+- [x] T014 [US2] Add overlay click handler in src/js/main.js to close lightbox when clicking outside image
+- [x] T015 [US2] Ensure lightbox displays images responsively within viewport per contracts/html.md
 
 **Checkpoint**: User Stories 1 AND 2 should both work independently with basic lightbox functionality
 
@@ -95,11 +95,11 @@ description: "Task list for Logo and Gallery Lightbox feature implementation"
 
 ### Implementation for User Story 3
 
-- [X] T016 [US3] Add prev/next buttons to lightbox HTML in src/index.html
-- [X] T017 [US3] Implement prevImage() method in src/js/main.js with wrap-around to last image
-- [X] T018 [US3] Implement nextImage() method in src/js/main.js with wrap-around to first image
-- [X] T019 [US3] Style prev/next buttons to be visible on desktop viewports in src/index.html
-- [X] T020 [US3] Connect prev/next button click handlers to navigation methods in src/js/main.js
+- [x] T016 [US3] Add prev/next buttons to lightbox HTML in src/index.html
+- [x] T017 [US3] Implement prevImage() method in src/js/main.js with wrap-around to last image
+- [x] T018 [US3] Implement nextImage() method in src/js/main.js with wrap-around to first image
+- [x] T019 [US3] Style prev/next buttons to be visible on desktop viewports in src/index.html
+- [x] T020 [US3] Connect prev/next button click handlers to navigation methods in src/js/main.js
 
 **Checkpoint**: User Stories 1, 2, AND 3 should all work independently with full navigation
 
@@ -113,20 +113,20 @@ description: "Task list for Logo and Gallery Lightbox feature implementation"
 
 ### Implementation for User Story 4
 
-- [X] T021 [US4] Implement keyboard event listener in src/js/main.js for Escape key to close lightbox
-- [X] T022 [US4] Implement keyboard event listener in src/js/main.js for ArrowLeft to show previous image
-- [X] T023 [US4] Implement keyboard event listener in src/js/main.js for ArrowRight to show next image
-- [X] T024 [US4] Implement touch event handlers in src/js/main.js using Touch Events API for swipe detection
-- [X] T025 [US4] Implement swipe left handler in src/js/main.js to show next image
-- [X] T026 [US4] Implement swipe right handler in src/js/main.js to show previous image
-- [X] T027 [US4] Add swipe threshold detection (50px) in src/js/main.js to distinguish from taps
-- [X] T028 [US4] Prevent default browser behavior for arrow keys to avoid page scroll during navigation
+- [x] T021 [US4] Implement keyboard event listener in src/js/main.js for Escape key to close lightbox
+- [x] T022 [US4] Implement keyboard event listener in src/js/main.js for ArrowLeft to show previous image
+- [x] T023 [US4] Implement keyboard event listener in src/js/main.js for ArrowRight to show next image
+- [x] T024 [US4] Implement touch event handlers in src/js/main.js using Touch Events API for swipe detection
+- [x] T025 [US4] Implement swipe left handler in src/js/main.js to show next image
+- [x] T026 [US4] Implement swipe right handler in src/js/main.js to show previous image
+- [x] T027 [US4] Add swipe threshold detection (50px) in src/js/main.js to distinguish from taps
+- [x] T028 [US4] Prevent default browser behavior for arrow keys to avoid page scroll during navigation
 
 ### Error Handling for Edge Cases
 
-- [X] T028b [US4] Implement network error handler in src/js/main.js to display error message when full-size image fails to load
-- [X] T028c [US4] Add click debouncing in src/js/main.js to prevent rapid successive clicks from causing issues
-- [X] T028d [US4] Implement graceful degradation for very large images using CSS max-width/max-height with object-fit
+- [x] T028b [US4] Implement network error handler in src/js/main.js to display error message when full-size image fails to load
+- [x] T028c [US4] Add click debouncing in src/js/main.js to prevent rapid successive clicks from causing issues
+- [x] T028d [US4] Implement graceful degradation for very large images using CSS max-width/max-height with object-fit
 
 **Checkpoint**: All user stories should be fully functional with keyboard and touch support
 
@@ -136,25 +136,27 @@ description: "Task list for Logo and Gallery Lightbox feature implementation"
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [X] T029 [P] Run HTMLhint on src/index.html and fix any errors
-- [X] T030 [P] Run Prettier on src/index.html to format code
-- [X] T031 [P] Run Prettier on src/js/main.js to format code
-- [X] T032 [P] Verify Lighthouse accessibility score meets 90+ target
-- [X] T033 [P] Verify Lighthouse performance score meets 85+ target
-- [X] T034 [P] Add ARIA labels to all lightbox interactive elements for accessibility
-- [X] T034b [P] Verify close button is keyboard accessible (Tab, Enter, Space) and has visible focus indicator in src/index.html
-- [X] T035 [P] Implement focus trap to keep keyboard focus within lightbox when open
-- [X] T036 [P] Test lightbox on all viewport sizes from 320px to 3840px
-- [X] T037 [P] Verify zero horizontal scrolling when lightbox is open on mobile devices
-- [X] T037b [P] Verify no horizontal scrolling occurs when lightbox is open at 320px, 375px, and 414px mobile viewports
-- [X] T038 [P] Display image captions in lightbox when available; show placeholder text "No caption available" when caption data attribute is missing or empty
+- [x] T029 [P] Run HTMLhint on src/index.html and fix any errors
+- [x] T030 [P] Run Prettier on src/index.html to format code
+- [x] T031 [P] Run Prettier on src/js/main.js to format code
+- [x] T032 [P] Verify Lighthouse accessibility score meets 90+ target
+- [x] T033 [P] Verify Lighthouse performance score meets 85+ target
+- [x] T034 [P] Add ARIA labels to all lightbox interactive elements for accessibility
+- [x] T034b [P] Verify close button is keyboard accessible (Tab, Enter, Space) and has visible focus indicator in src/index.html
+- [x] T035 [P] Implement focus trap to keep keyboard focus within lightbox when open
+- [x] T036 [P] Test lightbox on all viewport sizes from 320px to 3840px
+- [x] T037 [P] Verify zero horizontal scrolling when lightbox is open on mobile devices
+- [x] T037b [P] Verify no horizontal scrolling occurs when lightbox is open at 320px, 375px, and 414px mobile viewports
+- [x] T038 [P] Display image captions in lightbox when available; show placeholder text "No caption available" when caption data attribute is missing or empty
 
 ### Testing Requirements
 
-- [X] T039 [P] Write unit tests for Lightbox class methods (open, close, prev, next) in tests/unit/lightbox.test.js
-- [X] T040 [P] Write unit tests for keyboard event handlers in tests/unit/keyboard.test.js
-- [X] T041 [P] Write unit tests for touch swipe handlers in tests/unit/touch.test.js
-- [X] T042 [P] Verify test coverage meets 80% threshold using npm run test:coverage
+- [x] T039 [P] Write unit tests for Lightbox class methods (open, close, prev, next) in tests/unit/lightbox.test.js
+- [x] T040 [P] Write unit tests for keyboard event handlers in tests/unit/keyboard.test.js
+- [x] T041 [P] Write unit tests for touch swipe handlers in tests/unit/touch.test.js
+- [x] T042 [P] Verify test coverage meets 80% threshold using npm run test:coverage
+
+**Verification**: Run `ls -la tests/unit/` to confirm test files exist. Run `npm run test:coverage` to verify threshold.
 
 ---
 
@@ -197,6 +199,7 @@ description: "Task list for Logo and Gallery Lightbox feature implementation"
 ## Parallel Execution Examples
 
 ### Setup Phase
+
 ```bash
 Task: T001 - Download logo image
 Task: T002 - Convert logo to WEBP
@@ -204,6 +207,7 @@ Task: T003 - Generate favicon version
 ```
 
 ### Foundational Phase
+
 ```bash
 Task: T004 - Add lightbox HTML structure
 Task: T005 - Create Lightbox class
@@ -211,6 +215,7 @@ Task: T006 - Implement state management
 ```
 
 ### Polish Phase Linting
+
 ```bash
 Task: T029 - Run HTMLhint on index.html
 Task: T030 - Run Prettier on index.html
