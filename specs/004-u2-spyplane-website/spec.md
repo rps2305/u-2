@@ -1,11 +1,11 @@
 # Feature Specification: U-2 Spyplane Informational Website
 
-**Feature Branch**: `001-u2-spyplane-website`
+**Feature Branch**: `004-u2-spyplane-website`
 **Created**: 2026-01-03
 **Status**: Draft
 **Input**: User description: "create an informational website about the U-2 spyplane with lots of downloaded images. Website is responsive"
 
-## User Scenarios & Testing *(mandatory)*
+## User Scenarios & Testing _(mandatory)_
 
 ### User Story 1 - Browse Historical Information (Priority: P1)
 
@@ -86,7 +86,7 @@ As a mobile user, I want the website to work well on my phone or tablet so that 
 - What occurs when users with visual impairments access the content?
 - How does the website behave when accessed on very small screens (320px width) or very large monitors (4K+)?
 
-## Requirements *(mandatory)*
+## Requirements _(mandatory)_
 
 ### Functional Requirements
 
@@ -100,6 +100,7 @@ As a mobile user, I want the website to work well on my phone or tablet so that 
 - **FR-008**: Website MUST load primary content within 3 seconds on standard broadband connections.
 - **FR-009**: Website MUST be viewable without requiring user account creation or authentication.
 - **FR-010**: Website MUST include responsive image loading that adapts to network conditions and device capabilities.
+- **FR-011**: Website MUST depend on `001-image-webp-optimization` feature for image conversion pipeline.
 
 ### Key Entities
 
@@ -108,7 +109,7 @@ As a mobile user, I want the website to work well on my phone or tablet so that 
 - **Section**: Represents content areas with attributes including title, content type, order, and parent section for hierarchy.
 - **Mission**: Represents historical operational missions with attributes including date, location, purpose, and outcome.
 
-## Success Criteria *(mandatory)*
+## Success Criteria _(mandatory)_
 
 ### Measurable Outcomes
 

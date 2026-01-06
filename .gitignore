@@ -43,3 +43,10 @@ coverage/
 # package-lock.json
 # yarn.lock
 # pnpm-lock.yaml
+
+# Image optimization backups
+*.backup
+
+# Playwright test results
+playwright-report/
+test-results/
