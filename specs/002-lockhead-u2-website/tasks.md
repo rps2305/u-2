@@ -83,11 +83,11 @@ Each user story builds upon the previous one, with independent testability at ea
 - Keyboard navigation works (arrow keys, ESC)
 - Touch/swipe support on mobile devices
 
-- [ ] T019 [US3] Create gallery data structure with image metadata
-- [ ] T020 [P] [US3] Implement responsive gallery grid layout in frontend/src/index.html
-- [ ] T021 [US3] Integrate LightBox library in frontend/src/js/lightbox.js
-- [ ] T022 [P] [US3] Add image optimization and WebP conversion scripts
-- [ ] T023 [P] [US3] Implement responsive srcset attributes for gallery images
+- [X] T019 [US3] Create gallery data structure with image metadata
+- [X] T020 [P] [US3] Implement responsive gallery grid layout in frontend/src/index.html
+- [X] T021 [US3] Integrate LightBox library in frontend/src/js/lightbox.js
+- [X] T022 [P] [US3] Add image optimization and WebP conversion scripts
+- [X] T023 [P] [US3] Implement responsive srcset attributes for gallery images
 
 ## Phase 6: User Story 4 - SEO Optimization [US4]
 

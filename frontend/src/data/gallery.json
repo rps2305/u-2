@@ -1,0 +1,82 @@
+{
+  "gallery": [
+    {
+      "id": "u2-inflight-01",
+      "filename": "u2-inflight-01.webp",
+      "title": "U-2 During High-Altitude Flight",
+      "aircraft_type": "reconnaissance",
+      "description": "Lockhead U-2 aircraft operating at extreme altitude during reconnaissance mission, showing distinctive long-wing profile against clear sky.",
+      "source_url": "https://example.com/source",
+      "local_path": "./src/images/gallery/u2-inflight-01.webp",
+      "file_size_bytes": 245760,
+      "dimensions": "1920x1080",
+      "format": "webp",
+      "created_at": "2026-01-07T12:00:00Z"
+    },
+    {
+      "id": "u2-takeoff-02",
+      "filename": "u2-takeoff-02.webp",
+      "title": "U-2 Takeoff Procedure",
+      "aircraft_type": "operational",
+      "description": "U-2 aircraft during takeoff with support vehicles and ground crew, demonstrating complex launch procedures required for high-altitude missions.",
+      "source_url": "https://example.com/source",
+      "local_path": "./src/images/gallery/u2-takeoff-02.webp",
+      "file_size_bytes": 312450,
+      "dimensions": "1920x1080",
+      "format": "webp",
+      "created_at": "2026-01-07T12:00:00Z"
+    },
+    {
+      "id": "u2-cockpit-03",
+      "filename": "u2-cockpit-03.webp",
+      "title": "U-2 Cockpit and Instrument Panel",
+      "aircraft_type": "interior",
+      "description": "Detailed view of U-2 cockpit showing flight instruments, controls, and pressure suit interface used by pilots during extreme altitude missions.",
+      "source_url": "https://example.com/source",
+      "local_path": "./src/images/gallery/u2-cockpit-03.webp",
+      "file_size_bytes": 198500,
+      "dimensions": "1920x1080",
+      "format": "webp",
+      "created_at": "2026-01-07T12:00:00Z"
+    },
+    {
+      "id": "u2-landing-04",
+      "filename": "u2-landing-04.webp",
+      "title": "U-2 Landing Approach",
+      "aircraft_type": "operational",
+      "description": "U-2 aircraft during landing approach with distinctive bicycle landing gear and wingtip outriggers visible, requiring specialized ground crew support.",
+      "source_url": "https://example.com/source",
+      "local_path": "./src/images/gallery/u2-landing-04.webp",
+      "file_size_bytes": 276320,
+      "dimensions": "1920x1080",
+      "format": "webp",
+      "created_at": "2026-01-07T12:00:00Z"
+    },
+    {
+      "id": "u2-hangar-05",
+      "filename": "u2-hangar-05.webp",
+      "title": "U-2 in Maintenance Hangar",
+      "aircraft_type": "maintenance",
+      "description": "U-2 aircraft in maintenance hangar showing aircraft structure, revealing internal components and construction details of the high-altitude reconnaissance platform.",
+      "source_url": "https://example.com/source",
+      "local_path": "./src/images/gallery/u2-hangar-05.webp",
+      "file_size_bytes": 289100,
+      "dimensions": "1920x1080",
+      "format": "webp",
+      "created_at": "2026-01-07T12:00:00Z"
+    },
+    {
+      "id": "u2-pilot-06",
+      "filename": "u2-pilot-06.webp",
+      "title": "U-2 Pilot with Pressure Suit",
+      "aircraft_type": "personnel",
+      "description": "U-2 pilot wearing full pressure suit required for high-altitude missions, highlighting the extreme conditions faced during reconnaissance flights.",
+      "source_url": "https://example.com/source",
+      "local_path": "./src/images/gallery/u2-pilot-06.webp",
+      "file_size_bytes": 224800,
+      "dimensions": "1920x1080",
+      "format": "webp",
+      "created_at": "2026-01-07T12:00:00Z"
+    }
+  ]
+}
