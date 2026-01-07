@@ -1,0 +1,113 @@
+{
+  "aircraft_info": {
+    "history": [
+      {
+        "id": "u2-development",
+        "title": "Birth of a Legend: U-2 Development",
+        "category": "history",
+        "display_order": 1,
+        "content": "<p>Lockheed's legendary U-2 began development in the early 1950s, born from Cold War necessity for high-altitude reconnaissance. The aircraft's design, led by Kelly Johnson's Skunk Works team, prioritized extreme altitude capability over everything else.</p><p>First flying on August 1, 1955, the U-2 could reach altitudes above 70,000 feet - beyond the reach of Soviet interceptors and early surface-to-air missiles. This capability made it invaluable during the early Cold War period.</p>",
+        "created_at": "2026-01-07T12:00:00Z",
+        "updated_at": "2026-01-07T12:00:00Z"
+      },
+      {
+        "id": "gary-powers-incident",
+        "title": "The Gary Powers Incident (1960)",
+        "category": "history", 
+        "display_order": 2,
+        "content": "<p>On May 1, 1960, CIA pilot Francis Gary Powers was shot down over the Soviet Union while flying a U-2 reconnaissance mission. This incident created a major international crisis and exposed the extent of US aerial surveillance operations.</p><p>Powers survived the missile strike and subsequent bailout, was captured, tried for espionage, and eventually exchanged for Soviet spy Rudolf Abel in 1962. The event ended overflights of the Soviet Union and accelerated development of satellite reconnaissance.</p>",
+        "created_at": "2026-01-07T12:00:00Z",
+        "updated_at": "2026-01-07T12:00:00Z"
+      },
+      {
+        "id": "cuban-missile-crisis",
+        "title": "Cuban Missile Crisis Discovery",
+        "category": "history",
+        "display_order": 3,
+        "content": "<p>U-2 photography played a crucial role in the 1962 Cuban Missile Crisis. U-2 missions over Cuba captured definitive evidence of Soviet missile sites, triggering the famous confrontation between Kennedy and Khrushchev.</p><p>Major Rudolf Anderson was shot down during these reconnaissance flights, becoming the only combat casualty of the crisis. His U-2 was hit by a Soviet SA-2 Guideline missile while photographing missile installations.</p>",
+        "created_at": "2026-01-07T12:00:00Z",
+        "updated_at": "2026-01-07T12:00:00Z"
+      }
+    ],
+    "technical": [
+      {
+        "id": "airframe-design",
+        "title": "Revolutionary Airframe Design",
+        "category": "technical",
+        "display_order": 1,
+        "content": "<p>The U-2 features an extremely high aspect ratio wing (10.7:1) similar to gliders, designed specifically for efficient high-altitude flight. The long, thin wings provide maximum lift at rarefied atmosphere altitudes above 60,000 feet.</p><p>Fuselage construction uses lightweight aluminum alloys throughout, with the wings and tail surfaces fabric-covered in early models. The aircraft's distinctive bicycle landing gear with wingtip outriggers became an iconic design feature.</p>",
+        "created_at": "2026-01-07T12:00:00Z",
+        "updated_at": "2026-01-07T12:00:00Z"
+      },
+      {
+        "id": "engine-systems",
+        "title": "Powerplant and Performance",
+        "category": "technical",
+        "display_order": 2,
+        "content": "<p>Originally powered by the Pratt & Whitney J57 turbojet engine, the U-2A produced approximately 11,200 lbs of thrust. Later models upgraded to the J75-P-13B engine in the U-2R variant, increasing thrust to 17,000 lbs.</p><p>The engine's unusual configuration allows operation at extreme altitudes with specialized fuel systems and oil cooling. Maximum speed remains classified but is estimated around Mach 0.8 at operational altitude.</p>",
+        "created_at": "2026-01-07T12:00:00Z",
+        "updated_at": "2026-01-07T12:00:00Z"
+      }
+    ],
+    "mission": [
+      {
+        "id": "reconnaissance-role",
+        "title": "Primary Reconnaissance Mission",
+        "category": "mission",
+        "display_order": 1,
+        "content": "<p>The U-2's primary mission was photographic and signals intelligence gathering from extreme altitudes. Flying at 70,000+ feet placed the aircraft above most fighter interception capabilities and early surface-to-air missile range.</p><p>Mission payloads included the Type B camera system with 6,000 feet of film, capable of capturing detail visible from 14 miles up. Later variants added electronic intelligence gathering equipment and real-time data transmission capabilities.</p>",
+        "created_at": "2026-01-07T12:00:00Z",
+        "updated_at": "2026-01-07T12:00:00Z"
+      },
+      {
+        "id": "operational-procedures",
+        "title": "Mission Procedures and Operations",
+        "category": "mission",
+        "display_order": 2,
+        "content": "<p>U-2 missions required extensive planning and specialized launch procedures. Pilots underwent partial-pressure suit training and had to manage complex life support systems during missions lasting 8-12 hours.</p><p>Launch and recovery operations involved support aircraft for radio communication and chase planes for emergency assistance. The bicycle landing gear configuration required careful landing approaches and specialized ground crews.</p>",
+        "created_at": "2026-01-07T12:00:00Z",
+        "updated_at": "2026-01-07T12:00:00Z"
+      }
+    ],
+    "usage": [
+      {
+        "id": "cold-war-operations",
+        "title": "Cold War Operations",
+        "category": "usage",
+        "display_order": 1,
+        "content": "<p>During the Cold War, U-2 aircraft conducted continuous surveillance of Soviet bloc countries, China, Cuba, and other strategic locations. These missions provided crucial intelligence on military deployments, industrial capabilities, and missile installations.</p><p>Operations included 'Project Hawkmoth' overflights of China, monitoring Soviet nuclear tests, and tracking naval movements. The intelligence gathered influenced US foreign policy decisions throughout the 1950s and 1960s.</p>",
+        "created_at": "2026-01-07T12:00:00Z",
+        "updated_at": "2026-01-07T12:00:00Z"
+      },
+      {
+        "id": "modern-deployments",
+        "title": "Modern Military and Civilian Applications",
+        "category": "usage",
+        "display_order": 2,
+        "content": "<p>Modern U-2S aircraft continue serving with NASA for atmospheric research, weather monitoring, and scientific missions. The aircraft's unique altitude capabilities make it invaluable for high-altitude atmospheric studies.</p><p>Current military U-2R variants provide reconnaissance capabilities alongside satellites, offering advantages in certain scenarios including rapid deployment and flexible mission parameters. The aircraft continues evolution with modern sensors and communication systems.</p>",
+        "created_at": "2026-01-07T12:00:00Z",
+        "updated_at": "2026-01-07T12:00:00Z"
+      }
+    ],
+    "specs": [
+      {
+        "id": "u2r-dimensions",
+        "title": "U-2R Physical Specifications",
+        "category": "specs",
+        "display_order": 1,
+        "content": "<p><strong>Wingspan:</strong> 103 ft 11 in (31.7 m)</p><p><strong>Length:</strong> 63 ft 1 in (19.2 m)</p><p><strong>Height:</strong> 16 ft 1 in (4.9 m)</p><p><strong>Wing Area:</strong> 1,000 sq ft (93 m²)</p><p><strong>Empty Weight:</strong> 14,000 lbs (6,350 kg)</p><p><strong>Max Takeoff Weight:</strong> 40,000 lbs (18,150 kg)</p>",
+        "created_at": "2026-01-07T12:00:00Z",
+        "updated_at": "2026-01-07T12:00:00Z"
+      },
+      {
+        "id": "performance-data",
+        "title": "Performance Characteristics",
+        "category": "specs",
+        "display_order": 2,
+        "content": "<p><strong>Maximum Speed:</strong> Mach 0.8+ (classified exact)</p><p><strong>Cruise Speed:</strong> Mach 0.65-0.7 at 70,000 ft</p><p><strong>Service Ceiling:</strong> 70,000+ ft (21,300+ m)</p><p><strong>Range:</strong> 6,000+ miles (9,650+ km) with aerial refueling</p><p><strong>Endurance:</strong> 12+ hours with aerial refueling support</p><p><strong>Rate of Climb:</strong> 3,000 ft/min at sea level</p>",
+        "created_at": "2026-01-07T12:00:00Z",
+        "updated_at": "2026-01-07T12:00:00Z"
+      }
+    ]
+  }
+}
