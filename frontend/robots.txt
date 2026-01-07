@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Block access to build files and utilities
+Disallow: /node_modules/
+Disallow: /src/css/input.css
+Disallow: /package*.json
+Disallow: /tailwind.config.js
+Disallow: /postcss.config.js
+Disallow: /scripts/
+
+# Sitemap location
+Sitemap: https://www.ronaldpunt.nl/sitemap.xml

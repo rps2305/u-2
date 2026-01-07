@@ -98,11 +98,11 @@ Each user story builds upon the previous one, with independent testability at ea
 - sitemap.xml is valid and includes all sections
 - Lighthouse SEO score meets target (>90)
 
-- [ ] T024 [US4] Implement comprehensive meta tags and structured data in frontend/src/index.html
-- [ ] T025 [P] [US4] Create robots.txt with proper directives
-- [ ] T026 [P] [US4] Generate sitemap.xml with all website sections
-- [ ] T027 [US4] Add Open Graph and Twitter Card meta tags
-- [ ] T028 [P] [US4] Implement JSON-LD structured data for website content in frontend/src/index.html
+- [X] T024 [US4] Implement comprehensive meta tags and structured data in frontend/src/index.html
+- [X] T025 [P] [US4] Create robots.txt with proper directives
+- [X] T026 [P] [US4] Generate sitemap.xml with all website sections
+- [X] T027 [US4] Add Open Graph and Twitter Card meta tags
+- [X] T028 [P] [US4] Implement JSON-LD structured data for website content in frontend/src/index.html
 
 ## Phase 7: User Story 5 - Advanced Features [US5]
 
@@ -112,21 +112,21 @@ Each user story builds upon the previous one, with independent testability at ea
 - Mobile menu transitions are smooth
 - Matomo script placeholder is ready for activation
 
-- [ ] T029 [US5] Implement smooth scrolling navigation in frontend/src/js/main.js
-- [ ] T030 [P] [US5] Add Matomo analytics integration placeholder in frontend/src/index.html
+- [X] T029 [US5] Implement smooth scrolling navigation in frontend/src/js/main.js
+- [X] T030 [P] [US5] Add Matomo analytics integration placeholder in frontend/src/index.html
 
 ## Phase 8: Polish & Cross-Cutting Concerns
 
 **Goal**: Final optimization, testing, and deployment preparation
 
-- [ ] T030 [P] Implement final responsive design testing and fixes
-- [ ] T031 [P] Add accessibility improvements (ARIA labels, focus management)
-- [ ] T032 [P] Optimize performance (minify CSS/JS, optimize images)
-- [ ] T033 [P] Create deployment configuration and documentation
-- [ ] T034 Run final Lighthouse audit and fix any issues
-- [ ] T035 [P] Implement Jest unit tests for JavaScript modules in tests/unit/
-- [ ] T036 [P] Create Playwright E2E tests for core user flows in tests/e2e/
-- [ ] T037 [P] Set up test coverage reporting and CI integration
+- [X] T030 [P] Implement final responsive design testing and fixes
+- [X] T031 [P] Add accessibility improvements (ARIA labels, focus management)
+- [X] T032 [P] Optimize performance (minify CSS/JS, optimize images)
+- [X] T033 [P] Create deployment configuration and documentation
+- [X] T034 Run final Lighthouse audit and fix any issues
+- [X] T035 [P] Implement Jest unit tests for JavaScript modules in tests/unit/
+- [X] T036 [P] Create Playwright E2E tests for core user flows in tests/e2e/
+- [X] T037 [P] Set up test coverage reporting and CI integration
 
 ## Parallel Execution Examples
 
