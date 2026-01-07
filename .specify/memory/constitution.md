@@ -1,11 +1,9 @@
-<!--
-Sync Impact Report:
-- Version change: 1.0.1 → 2.0.0 (MAJOR - complete restructuring with new principles)
-- Modified principles: All principles replaced with user-specified content
-- Added sections: Code Quality Excellence, Testing Standards, User Experience Consistency, Performance Requirements, Additional Constraints, Development Workflow
-- Templates requiring updates: ✅ plan-template.md (already aligned), ✅ spec-template.md (already aligned), ✅ tasks-template.md (already aligned)
-- Follow-up TODOs: None
--->
+# Sync Impact Report:
+# Version change: 2.1.0 → 2.2.0 (MINOR - added platform tooling and browser support principles)
+# Modified principles: Added IV.B. Platform Tooling Requirements and expanded browser support
+# Added sections: Platform-specific development and testing guidelines
+# Templates requiring updates: ✅ plan-template.md (already aligned), ✅ spec-template.md (already aligned), ✅ tasks-template.md (already aligned)
+# Follow-up TODOs: None
 
 # Specify Agent Constitution
 
@@ -18,7 +16,7 @@ All code MUST meet the following quality standards:
 - Code MUST be self-documenting with clear, descriptive names for variables, functions, and types.
 - Functions MUST have a single responsibility and remain under 50 lines where practical.
 - Code MUST follow the project's established style guide and pass all linting checks before merge.
-- Complex logic MUST include inline comments explaining the "why" not the "what".
+- Complex logic MUST include inline comments explaining "why" not "what".
 - Dead code and unused dependencies MUST be removed promptly.
 
 Rationale: High code quality reduces maintenance burden, improves onboarding, and prevents bugs. Self-documenting code reduces knowledge silos and enables faster iteration.
@@ -96,46 +94,46 @@ All resource loading MUST be optimized for performance:
 
 Rationale: Optimized resource loading directly impacts Core Web Vitals metrics and user experience. Strategic resource management reduces page load times and improves perceived performance.
 
-## V. Development Workflow
+### IV.B. Platform Tooling Requirements
 
-### Code Review Requirements
+All platform-specific tooling MUST be properly configured:
 
-- All changes MUST receive at least one approval from a qualified reviewer.
-- Reviews MUST verify constitution compliance, not just code correctness.
-- Large changes (over 400 lines) MUST be broken into logical, reviewable chunks.
-- Automated checks MUST pass before human review begins.
+- macOS: MUST use SIPS for image processing and cwebp for WebP conversion.
+- Production: MUST NOT use Tailwind CSS from CDN - local build configuration required.
+- Development: MUST NOT rely on Safari HTTP server due to CORS and security limitations.
+- Cross-platform: MUST ensure build scripts work on macOS, Linux, and Windows environments.
+- Package managers: MUST support both npm and yarn for dependency management.
+- Local development: MUST avoid localhost file:// protocol issues with CORS headers.
 
-### Quality Gates
+Rationale: Platform-specific tooling requirements ensure consistent development environments and prevent deployment issues caused by platform-specific limitations or tooling differences.
 
-- CI pipeline MUST run lint, type checks, and all tests before merge.
-- Performance benchmarks MUST not regress by more than 10% without justification.
-- Security scans MUST pass with no critical or high-severity findings.
-
-## Governance
-
-This constitution supersedes all other development practices and guides. Amendments require:
-
-1. Documentation of proposed change with rationale.
-2. Review by at least two project maintainers.
-3. Migration plan for any affected existing implementations.
-4. Update to this document with incremented version number.
-
-Compliance with these principles MUST be verified during code review and CI checks. Violations require documented justification or correction before merge.
-
-**Version**: 2.1.0 | **Ratified**: 2026-01-03 | **Last Amended**: 2026-01-07
-
-### Technology Stack
+### V. Technology Stack
 
 - New dependencies MUST be evaluated for maintenance status, security posture, and community support.
 - Major framework upgrades MUST have a migration plan and backward compatibility strategy.
 - Polyglot services MUST isolate language-specific tooling to enable independent updates.
+- Local Tailwind CSS MUST be used with PostCSS - CDN usage prohibited.
+- Image processing MUST use SIPS on macOS and cwebp for WebP conversion.
+- Development servers MUST avoid Safari due to CORS and HTTP server limitations.
 
-### Security Standards
+### VI. Security Standards
 
 - All inputs MUST be validated and sanitized to prevent injection attacks.
 - Secrets MUST never be committed to version control; use environment variables or secret management services.
 - Dependencies MUST be audited for vulnerabilities before addition and regularly thereafter.
 - Authentication and authorization MUST be implemented at service boundaries, not just UI layer.
+
+### V.A. Browser Support Standards
+
+All implementations MUST support modern web browsers comprehensively:
+
+- Web browsers MUST support all modern browsers (Chrome, Firefox, Edge, Safari, Brave, Opera).
+- Safari testing is NOT required for development due to HTTP server limitations and CORS issues.
+- Progressive enhancement MUST ensure functionality degrades gracefully on older browsers.
+- Feature detection MUST be used instead of user agent string parsing.
+- Performance MUST be tested on at least Chrome, Firefox, and Edge.
+
+Rationale: Comprehensive browser support ensures accessibility for all users while allowing efficient development focused on modern standards. Safari development constraints prevent HTTP server and CORS issues.
 
 ## Development Workflow
 
@@ -163,4 +161,4 @@ This constitution supersedes all other development practices and guides. Amendme
 
 Compliance with these principles MUST be verified during code review and CI checks. Violations require documented justification or correction before merge.
 
-**Version**: 2.1.0 | **Ratified**: 2026-01-03 | **Last Amended**: 2026-01-07
+**Version**: 2.2.0 | **Ratified**: 2026-01-03 | **Last Amended**: 2026-01-07
