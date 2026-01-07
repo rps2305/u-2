@@ -25,7 +25,6 @@
 - Responsive breakpoints: 320px (mobile), 768px (tablet), 1024px (desktop), 1920px (wide)
 
 ### Performance Requirements
-- Responsive design for all screen sizes: 320px (mobile), 768px (tablet), 1024px (desktop), 1920px (wide)
 - Optimized image loading with proper sizing using srcset attributes
 - Page load performance targets: LCP < 2.5s, FID < 100ms, CLS < 0.1
 - Mobile-first approach with progressive enhancement
@@ -38,7 +37,11 @@
 - Matomo analytics integration capability:
   - Script placeholder ready for site ID configuration
   - Event tracking for gallery interactions and navigation
-  - Privacy-compliant implementation with cookie consent
+  - Privacy-compliant implementation with cookie consent:
+    - Cookie banner with accept/decline options
+    - Respect user's cookie preferences
+    - Only load Matomo after consent
+    - Provide option to withdraw consent
 
 ## Success Criteria
 1. Fully responsive website that works on all devices

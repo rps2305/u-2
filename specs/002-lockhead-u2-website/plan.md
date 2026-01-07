@@ -14,10 +14,10 @@ Create a static responsive HTML website with Tailwind CSS (local), PostCSS proce
 **Language/Version**: HTML5 + CSS3 + JavaScript ES2022  
 **Primary Dependencies**: Tailwind CSS (local), PostCSS, LightBox library  
 **Storage**: Local files (static website)  
-**Testing**: Lighthouse + Playwright + Jest  
+**Testing**: Lighthouse + Playwright + Jest + axe-core (accessibility)  
 **Target Platform**: Web browsers (desktop + mobile)  
 **Project Type**: Static website  
-**Performance Goals**: Fast page loads (<2s), optimized images  
+**Performance Goals**: Fast page loads (<200ms), optimized images  
 **Constraints**: Local Tailwind CSS (not CDN), WebP images only, SEO optimized  
 **Scale/Scope**: Small to medium static website with gallery
 
@@ -34,7 +34,7 @@ Create a static responsive HTML website with Tailwind CSS (local), PostCSS proce
 
 ### Testing Standards ✅ PASS
 
-- [x] Testing approach designed: Lighthouse + Playwright + Jest
+- [x] Testing approach designed: Lighthouse + Playwright + Jest + axe-core for accessibility
 - [x] 80% test coverage planned for JavaScript modules
 - [x] Comprehensive test contracts created (performance, accessibility, functionality)
 - [x] Constitution requirements satisfied through measurable testing (Lighthouse scores, Core Web Vitals)
@@ -85,10 +85,6 @@ specs/[###-feature]/
 ├── contracts/           # Phase 1 output (/speckit.plan command)
 └── tasks.md             # Phase 2 output (/speckit.tasks command - NOT created by /speckit.plan)
 ```
-
-### Source Code (repository root)
-
-```text
 frontend/
 ├── src/
 │   ├── css/
@@ -105,6 +101,9 @@ frontend/
 ├── postcss.config.js
 ├── tailwind.config.js
 └── robots.txt
+
+scripts/
+└── optimize-images.sh
 
 sitemap.xml
 ```
