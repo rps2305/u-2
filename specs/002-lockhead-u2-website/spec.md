@@ -17,23 +17,28 @@
 ### Technical Requirements
 - HTML5 + CSS3 + JavaScript ES2022
 - Tailwind CSS with PostCSS processing (local, not CDN)
-- Image optimization: WebP format, multiple sizes, srcset attributes
+- Image optimization: WebP format, multiple sizes (320px, 768px, 1024px, 1920px), srcset attributes
 - LightBox gallery implementation
 - Smooth scrolling navigation
 - SEO optimization (meta tags, semantic HTML)
 - robots.txt and sitemap.xml generation
+- Responsive breakpoints: 320px (mobile), 768px (tablet), 1024px (desktop), 1920px (wide)
 
 ### Performance Requirements
-- Responsive design for all screen sizes
-- Optimized image loading with proper sizing
-- Fast page load times
-- Mobile-first approach
+- Responsive design for all screen sizes: 320px (mobile), 768px (tablet), 1024px (desktop), 1920px (wide)
+- Optimized image loading with proper sizing using srcset attributes
+- Page load performance targets: LCP < 2.5s, FID < 100ms, CLS < 0.1
+- Mobile-first approach with progressive enhancement
+- Lighthouse performance score >90, accessibility >95, SEO >90
 
 ### Content Requirements
 - Gallery with lightbox functionality
 - Smooth scrolling between sections
 - SEO-friendly structure
-- Matomo analytics integration capability
+- Matomo analytics integration capability:
+  - Script placeholder ready for site ID configuration
+  - Event tracking for gallery interactions and navigation
+  - Privacy-compliant implementation with cookie consent
 
 ## Success Criteria
 1. Fully responsive website that works on all devices

@@ -2,12 +2,12 @@
 
 **Branch**: `002-lockhead-u2-website` | **Date**: 2026-01-07
 **Feature**: Static responsive HTML website with Tailwind CSS, optimized images, and LightBox gallery
-**Total Tasks**: 28
+**Total Tasks**: 37
 
 ## Executive Summary
 
 - **Total User Stories**: 5 (P1-P5)
-- **Task Distribution**: Setup (3) + Foundational (4) + User Stories (16) + Polish (5)
+- **Task Distribution**: Setup (3) + Foundational (4) + User Stories (19) + Polish (5)
 - **Parallel Opportunities**: 15 tasks can be parallelized across different files
 - **MVP Scope**: User Story 1 (Basic responsive structure with navigation)
 - **Estimated Implementation Time**: 2-3 days
@@ -102,6 +102,7 @@ Each user story builds upon the previous one, with independent testability at ea
 - [ ] T025 [P] [US4] Create robots.txt with proper directives
 - [ ] T026 [P] [US4] Generate sitemap.xml with all website sections
 - [ ] T027 [US4] Add Open Graph and Twitter Card meta tags
+- [ ] T028 [P] [US4] Implement JSON-LD structured data for website content in frontend/src/index.html
 
 ## Phase 7: User Story 5 - Advanced Features [US5]
 
@@ -111,8 +112,8 @@ Each user story builds upon the previous one, with independent testability at ea
 - Mobile menu transitions are smooth
 - Matomo script placeholder is ready for activation
 
-- [ ] T028 [US5] Implement smooth scrolling navigation in frontend/src/js/main.js
-- [ ] T029 [P] [US5] Add Matomo analytics integration placeholder in frontend/src/index.html
+- [ ] T029 [US5] Implement smooth scrolling navigation in frontend/src/js/main.js
+- [ ] T030 [P] [US5] Add Matomo analytics integration placeholder in frontend/src/index.html
 
 ## Phase 8: Polish & Cross-Cutting Concerns
 
@@ -123,6 +124,9 @@ Each user story builds upon the previous one, with independent testability at ea
 - [ ] T032 [P] Optimize performance (minify CSS/JS, optimize images)
 - [ ] T033 [P] Create deployment configuration and documentation
 - [ ] T034 Run final Lighthouse audit and fix any issues
+- [ ] T035 [P] Implement Jest unit tests for JavaScript modules in tests/unit/
+- [ ] T036 [P] Create Playwright E2E tests for core user flows in tests/e2e/
+- [ ] T037 [P] Set up test coverage reporting and CI integration
 
 ## Parallel Execution Examples
 
@@ -162,9 +166,11 @@ Each user story builds upon the previous one, with independent testability at ea
 
 ### Quality Gates
 - Lighthouse score >90 after each user story
-- Responsive design verified on 3 breakpoints (320px, 768px, 1920px)
+- Responsive design verified on 4 breakpoints (320px, 768px, 1024px, 1920px)
 - Accessibility compliance (WCAG 2.1 AA) maintained throughout
-- Performance budgets enforced (<2s load time)
+- Performance budgets enforced (<2.5s LCP, <100ms FID, <0.1 CLS)
+- Test coverage >80% for JavaScript modules
+- All automated tests pass in CI pipeline
 
 ## Testing Strategy
 
@@ -174,6 +180,11 @@ Each user story builds upon the previous one, with independent testability at ea
 - **US3**: Gallery functionality and LightBox testing
 - **US4**: SEO validation and meta tag testing
 - **US5**: Smooth scrolling and analytics integration testing
+
+### Implementation Testing
+- **Unit Tests**: Jest coverage for main.js and lightbox.js modules
+- **E2E Tests**: Playwright tests for navigation, gallery, and smooth scrolling
+- **Coverage Target**: 80% minimum for JavaScript modules
 
 ### Cross-Story Testing
 - Performance regression testing
