@@ -21,7 +21,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "@testing-library/jest-dom": "^6.4.0",
     "playwright": "^1.40.0",
-    "serve": "^14.2.0"
+    "serve": "^14.2.8"
   },
   "keywords": ["static", "website", "tailwindcss", "responsive", "aircraft"],
   "author": "Ronald Punt",
